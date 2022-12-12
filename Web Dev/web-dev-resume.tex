@@ -1,0 +1,155 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage{hyperref}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+    \usepackage[left=0.8in,right=0.8in,bottom=0.8in,top=0.8in]{geometry}
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\vspace*{-40pt}
+
+    
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+	{\Huge \scshape {Rohan Faiyaz Khan}}\\
+	\href{mailto:rohankhan170@gmail.com}{rohankhan170@gmail.com} $\cdot$ \href{https://www.github.com/rohanfaiyazkhan}{github.com/rohanfaiyazkhan} $\cdot$ \href{https://linkedin.com/in/rohan-faiyaz-khan/}{linkedin.com/in/rohan-faiyaz-khan/} $\cdot$  \href{https://rohanfaiyaz.com}{rohanfaiyaz.com} \\
+\end{center}
+
+\header{Technical Skills}
+
+\textbf{Languages}: Javascript $\cdot$ Typescript $\cdot$ Python
+
+\textbf{Frontend}: React $\cdot$ HTML $\cdot$ CSS $\cdot$ TailwindCSS
+
+\textbf{Backend}: Node.js $\cdot$ Express $\cdot$ Flask $\cdot$ SQL $\cdot$ MongoDB
+
+\textbf{Software/Technologies}: Git $\cdot$ JIRA $\cdot$ Basecamp
+
+\textbf{Others}: Agile Methodology (SCRUM) $\cdot$ User Experience $\cdot$ Web Accessibility
+
+\vspace{2mm}
+
+%==== Experience ====%
+\header{Work Experience}
+\vspace{1mm}
+
+\textbf{Carleton University} \hfill Ottawa, Ontario, Canada\\
+\textit{Research Assistant} \hfill July 2022 - Present\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Wrote Python script to automatically scrape 17,000 press releases on government websites and filter out 406 articles relevant to research project
+	\item Used Jupyter and Pandas to analyze dataset 700 data entries
+	\item Used machine learning technique MICE to predict 33\% missing data values 
+\end{itemize}
+
+\textbf{Queen\textquotesingle{}s University} \hfill Kingston, Ontario, Canada\\
+\textit{Master\textquotesingle{}s Student (AI and Machine Learning)} \hfill Sep 2021 - Present\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Re-implemented facial classification neural network from description in paper without source code and achieved test accuracy within 3\% of original model's accuracy
+	\item Conducted fairness audit on three state-of-the-art facial emotion recognition neural networks with dataset of 108,000 test images and found upto 20\% higher error rate in people of darker skin tone
+	\item Presented research at academic conference in Rotterdam, The Netherlands
+\end{itemize}
+
+\textbf{Xen Works Ltd} \hfill Dhaka, Bangladesh\\
+\textit{Frontend Developer} \hfill Sep 2019 - Aug 2021\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Used React and Typescript to help develop company's first product which was a retail management and e-commerce SaaS platform, and was involved in project through initial prototyping, pivoting post-pandemic, incorporating feedback from interested clients, polishing and bug-fixing in preparation for launch
+	\item Implemented caching for network requests, which improved load times to just 5 milliseconds after first load and significantly reduced unnecessary network calls
+	\item Synchronized multiple microservices to work seamlessly with each other, including AWS serverless backend, AWS congito authentication module, Algolia search engine, and Portwallet payment gateway
+	\item Was responsible for on-boarding, mentoring and performing code reviews of two new team members, while also writing documentation to ease future on-boarding.
+\end{itemize}
+
+\textbf{Relisource} \hfill Dhaka, Bangladesh\\
+\textit{Web Developer} \hfill Mar 2019 - Aug 2019\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Worked with clients to maintain a Learning Management System used to provide training to over 10,000 doctors
+	\item Helped develop the frontend of a CRUD based web application for managing information for client in US pharmaceutical industry, and helped integrate frontend into full stack ASP.NET application
+\end{itemize}
+
+%==== Education ====%
+\header{Education}
+\textbf{Queen\textquotesingle{}s University}\hfill Kingston, Ontario, Canada\\
+Master\textquotesingle{}s Computing \textit{GPA: 4.23/4.3} \hfill Sep 2021 - Jan 2023\\
+\vspace{2mm}
+\textbf{Multimedia University}\hfill Cyberjaya, Malaysia\\
+BEng Computering Engineering \textit{GPA: 3.87/4}\\
+\vspace{2mm}
+
+\header{Relevant Projects}
+{\textbf{Personal Blog}} {\sl Javascript, 11ty.js (static site generator), HTML, CSS, Nunjucks} \hfill \href{https://github.com/rohanfaiyazkhan/rohanfaiyaz-new}{Link} \\
+%Description\\
+\vspace*{2mm}
+{\textbf{Re-usable Multi-step Form Component}} {\sl React, Typescript} \hfill \href{https://github.com/rohanfaiyazkhan/stepper}{Link} \\
+%Description\\
+\vspace*{2mm}
+{\textbf{Azure Serverless Function for Image Classification}} {\sl Python} \hfill \href{https://github.com/rohanfaiyazkhan/azure-function-image-classifier}{Link} \\
+%Description\\
+
+
+\end{document}
